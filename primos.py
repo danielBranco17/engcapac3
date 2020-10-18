@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/a')
+@app.route('/')
 def primos():
     limite = 100
 
