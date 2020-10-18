@@ -7,7 +7,6 @@ app = Flask(__name__)
 def primos():
     limite = 100
 
-    a = 1
     b = 1
     n = 3
 
