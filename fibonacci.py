@@ -3,20 +3,21 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/'
 def fibonacci():
-    prox = 1
-    ant = 0
-    lim = 50
-    found = 0
-    resultado = "0,"
-    while (found < lim):
-        tmp = prox
-        prox = prox + ant
-        ant = tmp
-        found = found + 1
-        resultado += str(prox) + "."
-        resultado = resultado + "<br>"
+    resultado = "0.1."
+    soma = None
+    resultado1 = 1
+    atual = [0, 1]
+    indice = 0
+    indice1 = 1
+    while resultado1 < 50:
+        soma = atual[indice] + atual[indice1]
+        atual.append(soma)
+        resultado += str(soma) + "."
+        indice += 1
+        indice1 += 1
+        resultado1 += 1
     return resultado
 
 if __name__ == "__main__":
