@@ -16,6 +16,7 @@ def fibonacci():
         ant = tmp
         found = found + 1
         resultado += str(prox) + "."
+        resultado = resultado + "<br>"
     return resultado
 
 if __name__ == "__main__":
