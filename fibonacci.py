@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/'
+@app.route('/')
 def fibonacci():
     resultado = "0.1."
     soma = None
